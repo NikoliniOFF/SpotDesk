@@ -117,48 +117,48 @@ SpotDesk сам проверяет новые версии на этой стр�
 
 <table>
   <tr>
-    <td width="96" align="center"><a href="https://nikolinioff.github.io/HubDesk/"><img src="docs/assets/apps/hubdesk.png" alt="HubDesk" width="72"></a></td>
+    <td width="96" align="center"><a href="https://nikolinioff.github.io/HubDesk/"><img src="https://nikolinioff.github.io/HubDesk/assets/icon-256.png" alt="HubDesk" width="72"></a></td>
     <td>
-      <b><a href="https://nikolinioff.github.io/HubDesk/">HubDesk</a></b> — все программы Nikolini в одном окне: установка, включение, автозапуск и обновления галочками.<br>
+      <b><a href="https://nikolinioff.github.io/HubDesk/">HubDesk</a></b> — лаунчер Nikolini: все программы в одном окне — установка галочками, автозапуск и обновления.<br>
       <sub><a href="https://nikolinioff.github.io/HubDesk/">Сайт</a> · <a href="https://github.com/NikoliniOFF/HubDesk">GitHub</a></sub>
     </td>
   </tr>
   <tr>
-    <td width="96" align="center"><a href="https://nikolinioff.github.io/PeekDesk/"><img src="docs/assets/apps/peekdesk.png" alt="PeekDesk" width="72"></a></td>
-    <td>
-      <b><a href="https://nikolinioff.github.io/PeekDesk/">PeekDesk</a></b> — предпросмотр файлов по пробелу в Проводнике Windows, как Quick Look в macOS.<br>
-      <sub><a href="https://nikolinioff.github.io/PeekDesk/">Сайт</a> · <a href="https://github.com/NikoliniOFF/PeekDesk">GitHub</a></sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="96" align="center"><a href="https://nikolinioff.github.io/SnapDesk/"><img src="docs/assets/apps/snapdesk.png" alt="SnapDesk" width="72"></a></td>
-    <td>
-      <b><a href="https://nikolinioff.github.io/SnapDesk/">SnapDesk</a></b> — скриншоты и запись экрана по горячей клавише в Windows, как Cmd+Shift+5 в macOS: область, окно, экран или видео.<br>
-      <sub><a href="https://nikolinioff.github.io/SnapDesk/">Сайт</a> · <a href="https://github.com/NikoliniOFF/SnapDesk">GitHub</a></sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="96" align="center"><a href="https://nikolinioff.github.io/WinterDesk/"><img src="docs/assets/apps/winterdesk.png" alt="WinterDesk" width="72"></a></td>
+    <td width="96" align="center"><a href="https://nikolinioff.github.io/WinterDesk/"><img src="https://nikolinioff.github.io/WinterDesk/assets/icon-256.png" alt="WinterDesk" width="72"></a></td>
     <td>
       <b><a href="https://nikolinioff.github.io/WinterDesk/">WinterDesk</a></b> — снег на рабочем столе Windows: сугробы на окнах, гирлянды, ёлочка и отсчёт до Нового года.<br>
       <sub><a href="https://nikolinioff.github.io/WinterDesk/">Сайт</a> · <a href="https://github.com/NikoliniOFF/WinterDesk">GitHub</a></sub>
     </td>
   </tr>
   <tr>
-    <td width="96" align="center"><a href="https://nikolinioff.github.io/DockDesk/"><img src="docs/assets/apps/dockdesk.png" alt="DockDesk" width="72"></a></td>
+    <td width="96" align="center"><a href="https://nikolinioff.github.io/PeekDesk/"><img src="https://nikolinioff.github.io/PeekDesk/assets/icon-256.png" alt="PeekDesk" width="72"></a></td>
+    <td>
+      <b><a href="https://nikolinioff.github.io/PeekDesk/">PeekDesk</a></b> — предпросмотр файлов по пробелу в Проводнике Windows, как Quick Look в macOS.<br>
+      <sub><a href="https://nikolinioff.github.io/PeekDesk/">Сайт</a> · <a href="https://github.com/NikoliniOFF/PeekDesk">GitHub</a></sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="96" align="center"><a href="https://nikolinioff.github.io/SnapDesk/"><img src="https://nikolinioff.github.io/SnapDesk/assets/icon-256.png" alt="SnapDesk" width="72"></a></td>
+    <td>
+      <b><a href="https://nikolinioff.github.io/SnapDesk/">SnapDesk</a></b> — скриншоты и запись экрана по горячей клавише в Windows, как Cmd+Shift+5 в macOS: область, окно, экран или видео.<br>
+      <sub><a href="https://nikolinioff.github.io/SnapDesk/">Сайт</a> · <a href="https://github.com/NikoliniOFF/SnapDesk">GitHub</a></sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="96" align="center"><a href="https://nikolinioff.github.io/DockDesk/"><img src="https://nikolinioff.github.io/DockDesk/assets/icon-256.png" alt="DockDesk" width="72"></a></td>
     <td>
       <b><a href="https://nikolinioff.github.io/DockDesk/">DockDesk</a></b> — док для Windows, как в macOS: любимые программы внизу экрана, значки плавно растут под курсором.<br>
       <sub><a href="https://nikolinioff.github.io/DockDesk/">Сайт</a> · <a href="https://github.com/NikoliniOFF/DockDesk">GitHub</a></sub>
     </td>
   </tr>
   <tr>
-    <td width="96" align="center"><a href="https://nikolinioff.github.io/IslandDesk/"><img src="docs/assets/apps/islanddesk.png" alt="IslandDesk" width="72"></a></td>
+    <td width="96" align="center"><a href="https://nikolinioff.github.io/IslandDesk/"><img src="https://nikolinioff.github.io/IslandDesk/assets/icon-256.png" alt="IslandDesk" width="72"></a></td>
     <td>
       <b><a href="https://nikolinioff.github.io/IslandDesk/">IslandDesk</a></b> — «динамический остров» для Windows: музыка, громкость, таймер, загрузки и уведомления в живой пилюле вверху экрана.<br>
       <sub><a href="https://nikolinioff.github.io/IslandDesk/">Сайт</a> · <a href="https://github.com/NikoliniOFF/IslandDesk">GitHub</a></sub>
     </td>
   </tr>
-  <!-- Новая программа: скопируйте строку <tr>…</tr> выше и поменяйте значок, название, описание и ссылки. Порядок: HubDesk первым. -->
+  <!-- Список обновляет tools/update_cards.py из apps.json HubDesk (HubDesk первым). -->
 </table>
 
 Все программы — на [github.com/NikoliniOFF](https://github.com/NikoliniOFF).
