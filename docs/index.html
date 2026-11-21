@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SpotDesk для Windows — быстрый поиск программ и файлов, как Spotlight</title>
+<meta name="description" content="SpotDesk — бесплатный поиск для Windows 10 и 11 по Alt+Space, как Spotlight в macOS: программы, файлы и папки, калькулятор и курсы валют ЦБ РФ в одной строке.">
+<link rel="canonical" href="https://nikolinioff.github.io/SpotDesk/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SpotDesk">
+<meta property="og:url" content="https://nikolinioff.github.io/SpotDesk/">
+<meta property="og:title" content="SpotDesk для Windows — быстрый поиск программ и файлов, как Spotlight">
+<meta property="og:description" content="Alt+Space — и строка поиска посередине экрана: программы, файлы, калькулятор и курсы ЦБ. Бесплатно, без рекламы и без слежки.">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:image" content="https://nikolinioff.github.io/SpotDesk/assets/og-card.png">
+<meta property="og:image:secure_url" content="https://nikolinioff.github.io/SpotDesk/assets/og-card.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SpotDesk — строка поиска программ и файлов по Alt+Space, как Spotlight в macOS">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SpotDesk для Windows — быстрый поиск программ и файлов, как Spotlight">
+<meta name="twitter:description" content="Alt+Space — и строка поиска посередине экрана: программы, файлы, калькулятор и курсы ЦБ. Бесплатно, без рекламы и без слежки.">
+<meta name="twitter:image" content="https://nikolinioff.github.io/SpotDesk/assets/og-card.png">
+<meta name="twitter:image:alt" content="SpotDesk — строка поиска программ и файлов по Alt+Space, как Spotlight в macOS">
+<meta name="theme-color" content="#6c7cff">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<style>
+:root{--bg:#0e1330;--card:rgba(255,255,255,.05);--line:rgba(255,255,255,.10);--text:#eef0ff;--sub:#a9b0d8;--acc:#6c7cff;--acc2:#a06bff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.6 "Segoe UI Variable","Segoe UI",Inter,system-ui,-apple-system,sans-serif;color:var(--text);background:radial-gradient(1200px 700px at 80% -10%,#3a2a8a55,transparent 60%),radial-gradient(900px 600px at -10% 10%,#1f3fae44,transparent 60%),var(--bg);min-height:100vh}
+a{color:#aab6ff}a:hover{color:#fff}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header.top{display:flex;align-items:center;gap:12px;padding:18px 0}
+header.top img{width:36px;height:36px}header.top b{font-size:19px}
+header.top nav{margin-left:auto;display:flex;gap:20px;font-size:15px}header.top nav a{color:var(--sub);text-decoration:none}header.top nav a:hover{color:#fff}
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center;padding:40px 0 30px}
+.hero h1{font-size:54px;line-height:1.08;margin:18px 0 14px;letter-spacing:-.02em}
+.hero h1 span{background:linear-gradient(90deg,#8fa0ff,#c79bff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{font-size:20px;color:var(--sub);margin:0 0 26px}
+.hero .logo{width:96px;height:96px;filter:drop-shadow(0 14px 30px #0008)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:14px;font-weight:600;font-size:18px;text-decoration:none;color:#fff;background:linear-gradient(135deg,var(--acc),var(--acc2));box-shadow:0 10px 30px #5b5cff55;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 36px #5b5cff77;color:#fff}
+.btn svg{width:22px;height:22px}
+.meta{color:var(--sub);font-size:14px;margin-top:12px}.dlcount{color:var(--sub);font-size:14px;margin:6px 0 0}
+.shot{border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 70px #000a}
+.shot img{display:block;width:100%;height:auto}
+.stack{position:relative}.stack .shot+.shot{position:absolute;width:78%;left:-8%;bottom:-16%}
+section{padding:56px 0}
+h2{font-size:34px;margin:0 0 8px;letter-spacing:-.01em}h2+p.sub{color:var(--sub);margin:0 0 30px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.card h3{margin:6px 0 6px;font-size:19px}.card p{margin:0;color:var(--sub);font-size:15.5px}.card .ic{font-size:26px}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.gal img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line);box-shadow:0 18px 40px #0008}
+.gal figure{margin:0}.gal figcaption{color:var(--sub);font-size:14px;margin-top:8px;text-align:center}
+table.keys{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+table.keys td{padding:11px 16px;border-top:1px solid var(--line);font-size:15.5px}table.keys tr:first-child td{border-top:0}
+kbd{display:inline-block;padding:1px 7px;border-radius:6px;border:1px solid #ffffff33;border-bottom-width:2px;background:#ffffff10;font-size:13px;font-family:inherit}
+ol.steps{padding-left:22px}ol.steps li{margin:8px 0}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:10px 0}
+details summary{cursor:pointer;font-weight:600}details p{color:var(--sub);margin:10px 0 0}
+.apps{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px}
+.app{display:flex;gap:18px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;transition:border-color .15s,transform .15s}
+.app:hover{border-color:#8f9bff66;transform:translateY(-2px)}
+.app img{width:72px;height:72px;flex:none;filter:drop-shadow(0 8px 18px #0007)}
+.app h3{margin:0 0 4px;font-size:19px}.app p{margin:0 0 8px;color:var(--sub);font-size:15px}.app .links{display:flex;gap:14px;font-size:14.5px}
+.giscus-wrap{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;color:var(--sub)}
+footer{padding:36px 0 50px;color:var(--sub);font-size:14.5px;text-align:center;border-top:1px solid var(--line);margin-top:30px}
+@media (max-width:900px){.hero{grid-template-columns:1fr}.hero h1{font-size:40px}.grid{grid-template-columns:1fr 1fr}.stack .shot+.shot{display:none}header.top nav{display:none}}
+@media (max-width:600px){.grid,.gal{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top"><img src="assets/icon-64.png" alt=""><b>SpotDesk</b>
+    <nav><a href="#features">Возможности</a><a href="#shots">Как выглядит</a><a href="#keys">Клавиши</a><a href="#faq">Вопросы</a><a href="#apps">Другие программы</a></nav>
+  </header>
+
+  <div class="hero">
+    <div>
+      <img class="logo" src="assets/icon-256.png" alt="Значок SpotDesk">
+      <h1>Alt+Space — и всё <span>находится сразу</span></h1>
+      <p class="lead">SpotDesk — быстрый поиск для Windows, как Spotlight в macOS. Строка посередине экрана: программы, файлы и папки, калькулятор и курсы валют ЦБ — Enter открывает, Esc прячет.</p>
+      <a class="btn dl" href="https://github.com/NikoliniOFF/SpotDesk/releases/latest/download/SpotDesk-win64.zip" download="SpotDesk-win64.zip">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
+        Скачать SpotDesk
+      </a>
+      <p class="meta"><span class="dlinfo">ZIP · около&nbsp;0,4&nbsp;МБ</span> · Windows 10 и 11 (64-бит) · <a href="https://github.com/NikoliniOFF/SpotDesk/releases">все версии</a></p>
+      <p class="dlcount" hidden></p>
+    </div>
+    <div class="stack">
+      <div class="shot"><img src="assets/media/bar-light.jpg" alt="Строка поиска SpotDesk: папки, файлы и программы" width="760" height="560"></div>
+      <div class="shot"><img src="assets/media/currency.jpg" alt="Курс валют в SpotDesk" width="760" height="300" loading="lazy"></div>
+    </div>
+  </div>
+
+  <section id="features">
+    <h2>Что умеет</h2><p class="sub">Бесплатно · без установки · без рекламы и без слежки · обновляется сама</p>
+    <div class="grid">
+      <div class="card"><div class="ic">🔎</div><h3>Программы</h3><p>Меню «Пуск», рабочий стол и приложения Microsoft Store. Нечёткий поиск: «vsc» найдёт Visual Studio Code. Частые — выше.</p></div>
+      <div class="card"><div class="ic">📁</div><h3>Файлы и папки</h3><p>Свой индекс имён, как в Everything: строится в фоне с низким приоритетом и обновляется сам. По желанию — весь диск NTFS за секунды.</p></div>
+      <div class="card"><div class="ic">🧮</div><h3>Калькулятор</h3><p>«2+2*2», «sqrt 16», «2^10», «15% от 3000» — ответ первой строкой, Enter копирует его в буфер.</p></div>
+      <div class="card"><div class="ic">💱</div><h3>Курсы валют</h3><p>«100 usd в rub», «50 евро в рублях», «курс юаня» — по официальному курсу ЦБ РФ на сегодня. В сеть — только когда нужно.</p></div>
+      <div class="card"><div class="ic">⌨️</div><h3>С клавиатуры</h3><p>↑↓ — выбор, Enter — открыть, Ctrl+Enter — показать в папке, Shift+Enter — от администратора, Tab — дополнить.</p></div>
+      <div class="card"><div class="ic">🌐</div><h3>Поиск в интернете</h3><p>Не нашлось на компьютере — последняя строка ищет в Яндексе, Google, DuckDuckGo или Bing.</p></div>
+      <div class="card"><div class="ic">⚡</div><h3>Лёгкая</h3><p>Панель появляется мгновенно, а в простое не тратит процессор: ни опросов, ни хуков клавиатуры.</p></div>
+      <div class="card"><div class="ic">🎛️</div><h3>Всё отключается</h3><p>У каждой функции свой переключатель, горячая клавиша меняется. Если Alt+Space занято — SpotDesk предупредит.</p></div>
+      <div class="card"><div class="ic">🌗</div><h3>Светлая и тёмная</h3><p>Следует теме Windows или выбирается вручную. Панель появляется и гаснет плавно.</p></div>
+    </div>
+  </section>
+
+  <section id="shots">
+    <h2>Как это выглядит</h2><p class="sub">Настоящие снимки SpotDesk 1.0.0</p>
+    <div class="gal">
+      <figure><img src="assets/media/bar-dark.jpg" alt="Тёмная тема: папки, файлы и программы" width="760" height="560" loading="lazy"><figcaption>Программы, папки и файлы в одном списке</figcaption></figure>
+      <figure><img src="assets/media/files.jpg" alt="Поиск файлов" width="760" height="380" loading="lazy"><figcaption>Файлы — по имени, как в Everything</figcaption></figure>
+      <figure><img src="assets/media/calc.jpg" alt="Калькулятор" width="760" height="300" loading="lazy"><figcaption>Калькулятор: ответ первой строкой</figcaption></figure>
+      <figure><img src="assets/media/currency.jpg" alt="Курс валют" width="760" height="300" loading="lazy"><figcaption>Курсы валют ЦБ РФ на сегодня</figcaption></figure>
+      <figure><img src="assets/media/settings.jpg" alt="Настройки: что искать" width="600" height="760" loading="lazy"><figcaption>Настройки: что искать</figcaption></figure>
+      <figure><img src="assets/media/settings-dark.jpg" alt="Настройки: индекс файлов в тёмной теме" width="600" height="760" loading="lazy"><figcaption>Индекс файлов и быстрый режим NTFS</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="install">
+    <h2>Как установить</h2>
+    <ol class="steps">
+      <li>Скачайте <a class="dl" href="https://github.com/NikoliniOFF/SpotDesk/releases/latest/download/SpotDesk-win64.zip"><b>SpotDesk-win64.zip</b></a>.</li>
+      <li>Распакуйте архив в постоянную папку, например <code>Документы\SpotDesk</code>.</li>
+      <li>Запустите <b>SpotDesk.exe</b> — значок появится в трее у часов. Нажмите <kbd>Alt</kbd>+<kbd>Space</kbd>.</li>
+      <li>Если Windows покажет «Система Windows защитила ваш компьютер» — «Подробнее» → «Выполнить в любом случае».</li>
+    </ol>
+    <p style="color:var(--sub)">Устанавливать ничего не нужно. При первом запуске SpotDesk добавляет себя в автозапуск (выключается в настройках). Чтобы удалить — «Выход» в меню значка и удалить папку.</p>
+  </section>
+
+  <section id="keys">
+    <h2>Клавиши</h2><p class="sub">Сочетание для открытия меняется в настройках</p>
+    <table class="keys">
+      <tr><td><kbd>Alt</kbd>+<kbd>Space</kbd></td><td>открыть или спрятать поиск</td></tr>
+      <tr><td><kbd>↑</kbd> <kbd>↓</kbd> · <kbd>PgUp</kbd> <kbd>PgDn</kbd></td><td>выбрать строку</td></tr>
+      <tr><td><kbd>Enter</kbd></td><td>открыть; для расчёта и курса — скопировать ответ</td></tr>
+      <tr><td><kbd>Ctrl</kbd>+<kbd>Enter</kbd></td><td>показать файл в папке</td></tr>
+      <tr><td><kbd>Shift</kbd>+<kbd>Enter</kbd></td><td>запустить от имени администратора</td></tr>
+      <tr><td><kbd>Tab</kbd></td><td>дополнить запрос</td></tr>
+      <tr><td><kbd>Esc</kbd></td><td>спрятать поиск (или щёлкните мимо)</td></tr>
+    </table>
+  </section>
+
+  <section id="faq">
+    <h2>Вопросы</h2>
+    <details><summary>Windows пишет «Система Windows защитила ваш компьютер»</summary><p>Это фильтр SmartScreen: программа новая и не подписана платным сертификатом. Нажмите «Подробнее» → «Выполнить в любом случае». Скачивайте SpotDesk только со <a href="https://github.com/NikoliniOFF/SpotDesk/releases">страницы выпусков</a> — рядом с архивом лежит файл .sha256.</p></details>
+    <details><summary>Alt+Space не срабатывает</summary><p>Сочетание может быть занято PowerToys Run или другой программой. Откройте настройки и выберите другое, например Ctrl+Space или Win+Space.</p></details>
+    <details><summary>Не будет ли тормозить компьютер?</summary><p>Нет. В простое SpotDesk ничего не опрашивает, индекс строится в фоне с низким приоритетом и обновляется по уведомлениям Windows.</p></details>
+    <details><summary>Почему не находятся файлы с диска D:?</summary><p>По умолчанию индексируются папки пользователя. Добавьте нужные папки во вкладке «Файлы» или включите «Быстрый индекс NTFS» (нужен запуск от имени администратора).</p></details>
+    <details><summary>Программа что-нибудь собирает или отправляет?</summary><p>Нет. Индекс и история остаются на вашем компьютере. В интернет — только проверка обновлений на GitHub и курсы ЦБ РФ, когда вы пересчитываете валюту.</p></details>
+  </section>
+
+  <section id="apps">
+    <h2>Другие программы от Nikolini</h2><p class="sub">Тоже бесплатные, лёгкие и без рекламы</p>
+    <div class="apps">
+      <div class="app">
+        <a href="https://nikolinioff.github.io/PeekDesk/"><img src="assets/apps/peekdesk.png" alt="PeekDesk" width="72" height="72" loading="lazy"></a>
+        <div><h3>PeekDesk</h3><p>Предпросмотр файлов по пробелу в Проводнике, как Quick Look в macOS: картинки, Excel, Word, PDF, код и видео.</p>
+          <div class="links"><a href="https://nikolinioff.github.io/PeekDesk/">Сайт</a><a href="https://github.com/NikoliniOFF/PeekDesk">GitHub</a></div></div>
+      </div>
+      <div class="app">
+        <a href="https://nikolinioff.github.io/SnapDesk/"><img src="assets/apps/snapdesk.png" alt="SnapDesk" width="72" height="72" loading="lazy"></a>
+        <div><h3>SnapDesk</h3><p>Скриншоты и запись экрана по Ctrl+Shift+5, как в macOS: область, окно, экран, видео MP4 и миниатюры в углу.</p>
+          <div class="links"><a href="https://nikolinioff.github.io/SnapDesk/">Сайт</a><a href="https://github.com/NikoliniOFF/SnapDesk">GitHub</a></div></div>
+      </div>
+      <div class="app">
+        <a href="https://nikolinioff.github.io/WinterDesk/"><img src="assets/apps/winterdesk.png" alt="WinterDesk" width="72" height="72" loading="lazy"></a>
+        <div><h3>WinterDesk</h3><p>Снег на рабочем столе Windows: сугробы на окнах, гирлянды, ёлочка и отсчёт до Нового года.</p>
+          <div class="links"><a href="https://nikolinioff.github.io/WinterDesk/">Сайт</a><a href="https://github.com/NikoliniOFF/WinterDesk">GitHub</a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="talk">
+    <h2>Обсуждение</h2><p class="sub"><a href="https://github.com/NikoliniOFF/SpotDesk/discussions/new/choose">Предложить идею</a> · <a href="https://github.com/NikoliniOFF/SpotDesk/issues/new?template=bug.yml">Сообщить о баге</a> · <a href="https://github.com/NikoliniOFF/SpotDesk/discussions">Все обсуждения</a></p>
+    <div class="giscus-wrap"><p style="margin:0;font-size:15px">Вопросы, идеи и новости о выпусках — в <a href="https://github.com/NikoliniOFF/SpotDesk/discussions">обсуждениях проекта</a> на GitHub.</p></div>
+  </section>
+
+  <footer>SpotDesk для Windows · автор — <a href="https://github.com/NikoliniOFF">Nikolini (NikoliniOFF)</a> · <a href="https://github.com/NikoliniOFF/SpotDesk/releases">все версии</a> · <a href="https://github.com/NikoliniOFF/SpotDesk/discussions">обсуждения</a><br>Бесплатно, без рекламы и без слежки.</footer>
+</div>
+<script>
+// версия и размер архива + сколько раз скачали (GitHub API, без счётчиков и аналитики); кэш на час в localStorage
+(function(){var R='NikoliniOFF/SpotDesk',K='spd_rel_v1',H=3600000,c=null;
+try{c=JSON.parse(localStorage.getItem(K)||'null');}catch(e){}
+function plural(n,a,b,d){var x=n%100,m=n%10;if(x>10&&x<20)return d;if(m>1&&m<5)return b;if(m==1)return a;return d;}
+function show(d){if(!d)return;
+ if(d.v&&d.url){var t='Версия '+d.v+' · ZIP '+(d.size/1048576).toFixed(1).replace('.',',')+'\u00a0МБ';
+  document.querySelectorAll('.dlinfo').forEach(function(e){e.textContent=t;});
+  document.querySelectorAll('a.dl').forEach(function(e){e.href=d.url;e.title='SpotDesk для Windows '+d.v;});}
+ if(d.n>0)document.querySelectorAll('.dlcount').forEach(function(e){e.innerHTML='⬇ Скачали <b></b> '+plural(d.n,'раз','раза','раз');e.querySelector('b').textContent=d.n.toLocaleString('ru-RU');e.hidden=false;});}
+if(c&&Date.now()-c.t<H){show(c);return;}
+var api='https://api.github.com/repos/'+R,hd={headers:{Accept:'application/vnd.github+json'}},d={t:Date.now(),n:0};
+function j(u){return fetch(u,hd).then(function(r){if(!r.ok)throw 0;return r.json();});}
+function pages(p){return j(api+'/releases?per_page=100&page='+p).then(function(a){
+  a.forEach(function(rel){(rel.assets||[]).forEach(function(x){if(/\.zip$/i.test(x.name))d.n+=x.download_count||0;});});
+  if(a.length===100&&p<10)return pages(p+1);});}
+j(api+'/releases/latest').then(function(r){var a=(r.assets||[]).filter(function(x){return x.name==='SpotDesk-win64.zip';})[0]||(r.assets||[]).filter(function(x){return /win64\.zip$/i.test(x.name);})[0];
+  d.v=(r.tag_name||'').replace(/^v/,'');if(a){d.url=a.browser_download_url;d.size=a.size;}})
+ .catch(function(){}).then(function(){return pages(1);})
+ .then(function(){try{localStorage.setItem(K,JSON.stringify(d));}catch(e){}show(d);})
+ .catch(function(){if(c)show(c);});})();
+</script>
+
+</body>
+</html>

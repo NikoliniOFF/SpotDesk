@@ -1,0 +1,41 @@
+name: Сообщить о баге
+description: Что-то в SpotDesk работает не так
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Спасибо, что сообщаете! Чем подробнее — тем быстрее получится исправить."
+  - type: textarea
+    id: what
+    attributes:
+      label: Что случилось
+      placeholder: "Например: не находится программа из меню «Пуск»"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Как повторить
+      placeholder: "1. …\n2. …"
+  - type: input
+    id: query
+    attributes:
+      label: Что вы искали
+      description: Запрос и что ожидали увидеть (без личных данных).
+      placeholder: "«telegram» — ожидал Telegram первой строкой"
+  - type: input
+    id: version
+    attributes:
+      label: Версия SpotDesk
+      description: Меню значка в трее → «О программе»
+      placeholder: "1.0.0"
+  - type: input
+    id: windows
+    attributes:
+      label: Windows и экран
+      placeholder: "Windows 11, масштаб 125%"
+  - type: textarea
+    id: extra
+    attributes:
+      label: Скриншот или журнал
+      description: "Перетащите сюда скриншот. Журнал: запустите `SpotDesk.exe --log`, он появится в `%APPDATA%\\SpotDesk\\SpotDesk.log`."
