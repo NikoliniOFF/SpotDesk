@@ -140,7 +140,7 @@ SpotDesk сам проверяет новые версии на этой стр�
   <tr>
     <td width="96" align="center"><a href="https://nikolinioff.github.io/SnapDesk/"><img src="https://nikolinioff.github.io/SnapDesk/assets/icon-256.png" alt="SnapDesk" width="72"></a></td>
     <td>
-      <b><a href="https://nikolinioff.github.io/SnapDesk/">SnapDesk</a></b> — скриншоты и запись экрана по горячей клавише в Windows, как Cmd+Shift+5 в macOS: область, окно, экран или видео.<br>
+      <b><a href="https://nikolinioff.github.io/SnapDesk/">SnapDesk</a></b> — скриншоты и запись экрана по горячей клавише, как в macOS: миниатюра в углу, которую можно перетащить в Discord.<br>
       <sub><a href="https://nikolinioff.github.io/SnapDesk/">Сайт</a> · <a href="https://github.com/NikoliniOFF/SnapDesk">GitHub</a></sub>
     </td>
   </tr>
